@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/bbenezech/rails_admin.git
-  revision: 2875cded280a06de09d4cd65b561f8e07f6ce4ea
+  revision: ecbdc2fc0d05e75dee2fc2c5c55d6deea2243f8f
   branch: bootstrap
   specs:
     rails_admin (0.0.1)
@@ -64,7 +64,7 @@ GEM
     faraday (0.7.4)
       addressable (~> 2.2.6)
       multipart-post (~> 1.1.0)
-      rack (>= 1.1.0, < 2)
+      rack (< 2, >= 1.1.0)
     faraday_middleware (0.7.0)
       faraday (~> 0.7.3)
     haml (3.1.3)
@@ -126,7 +126,8 @@ GEM
     sprockets (2.0.0)
       hike (~> 1.2)
       rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
+      tilt (!= 1.3.0, ~> 1.1)
+    sqlite3 (1.3.4)
     thin (1.2.11)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -156,5 +157,6 @@ DEPENDENCIES
   rails (~> 3.1.0)
   rails_admin!
   sass-rails (~> 3.1.0.rc)
+  sqlite3
   thin
   uglifier
