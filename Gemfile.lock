@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/bbenezech/rails_admin.git
-  revision: c4875d6899f1307ae951a83e146890a20433f9fe
+  revision: 938a1deeaed4beb65a8645110402c5147f31da7d
   branch: bootstrap
   specs:
     rails_admin (0.0.1)
