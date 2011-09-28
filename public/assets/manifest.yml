@@ -41,7 +41,7 @@ rails_admin/timeline/handler.png: rails_admin/timeline/handler-a33e12166f8123b83
 rails_admin/jquery.colorpicker.js: rails_admin/jquery-f94508b7f9498b0a19692139af1fdc66.colorpicker.js
 rails_admin/jquery.ui.timepicker.js: rails_admin/jquery-3c6256be5ee10d6800e07ba58ebaa3a2.ui.timepicker.js
 rails_admin/ra.datetimepicker.js: rails_admin/ra-fe34217c7763ef29ffc867d363f22e4b.datetimepicker.js
-rails_admin/ra.filter-box.js: rails_admin/ra-15ff3d961a7b8fd24d6e20ca3dd7c00b.filter-box.js
+rails_admin/ra.filter-box.js: rails_admin/ra-47a032e4bd0c55dc301e8fbb09cc3ac1.filter-box.js
 rails_admin/ra.filtering-multiselect.js: rails_admin/ra-67bc8999ed68aeded7df52a727b0802c.filtering-multiselect.js
 rails_admin/ra.filtering-select.js: rails_admin/ra-997dbc97e401bc453f4131c69b082fe7.filtering-select.js
 rails_admin/ra.remote-form.js: rails_admin/ra-853e0a9ccaf639e14b572505730e16df.remote-form.js
