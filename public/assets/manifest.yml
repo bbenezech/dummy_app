@@ -57,7 +57,7 @@ rails_admin/jquery.colorpicker.css: rails_admin/jquery-d9464315be5d6c8e74cfe51c7
 rails_admin/jquery.ui.timepicker.css: rails_admin/jquery-61c2fa7bcb631b4bc036801f51815b6a.ui.timepicker.css
 rails_admin/ra.calendar-additions.css: rails_admin/ra-7b2f60e1c7d9bf54a7f4222f01ee1559.calendar-additions.css
 rails_admin/ra.filtering-multiselect.css: rails_admin/ra-c4a09c49a5bacd3d9977ed3f3d5ff0e4.filtering-multiselect.css
-rails_admin/ra.theme.css: rails_admin/ra-a24f010258c53e851401f0a66547f934.theme.css
+rails_admin/ra.theme.css: rails_admin/ra-e9a938fa4ab2899776ba1e7a69447e4f.theme.css
 rails_admin/ra.timeline.css: rails_admin/ra-55f9bf5f044efc5ac70c034e6dc08b55.timeline.css
 jquery-ui.min.js: jquery-ui-7e33882a28fc84ad0e0e47e46cbf901c.min.js
 jquery.min.js: jquery-8a50feed8d29566738ad005e19fe1c2d.min.js
