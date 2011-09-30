@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/bbenezech/rails_admin.git
-  revision: 3df458cb797969e26c5db718d4efd8e6bbdbe6ab
+  revision: b7bcc3ebcf1398e9bde9f79af7979e924e1b315c
   branch: bootstrap
   specs:
     rails_admin (0.0.1)
@@ -154,7 +154,7 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.29)
+    tzinfo (0.3.30)
     uglifier (1.0.3)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
