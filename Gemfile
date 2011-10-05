@@ -16,7 +16,7 @@ group :assets do
   gem 'uglifier'
 end
 
-gem 'rails_admin', :git => 'git://github.com/bbenezech/rails_admin.git', :branch => 'bootstrap'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'devise', '~> 1.4'
 gem 'mlb', '~> 0.5.5'
 gem 'paperclip', '~> 2.3.16'
