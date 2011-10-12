@@ -44,6 +44,8 @@ rails_admin/multiselect/ui-icon-circle-triangle-s-light.png: rails_admin/multise
 rails_admin/timeline/arrow_left.png: rails_admin/timeline/arrow_left-c85e263a068564df24ba03f7f70c871d.png
 rails_admin/timeline/arrow_right.png: rails_admin/timeline/arrow_right-a83127e459b46649efb55120a945af9d.png
 rails_admin/timeline/handler.png: rails_admin/timeline/handler-7da853d0ac3aaa46677e46e2f802f861.png
+rails_admin/rails_admin.js: rails_admin/rails_admin-5bbce4da8192a811b05c9e144f1cbdd2.js
 rails_admin/base/README: rails_admin/base/README
 rails_admin/custom/README: rails_admin/custom/README
+rails_admin/rails_admin.css: rails_admin/rails_admin-ecbfa2594718fc52edf46231fec2ab6d.css
 rails_admin/themes/README: rails_admin/themes/README

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/sferik/rails_admin.git
-  revision: 2b280bc600c9b59246c2df2d7b59c334f0a89a96
+  revision: 20c41fbc1863878a7749ad56f20e11ccbf761e42
   specs:
     rails_admin (0.0.1)
       bootstrap-sass
@@ -56,7 +56,7 @@ GEM
       execjs
     coffee-script-source (1.1.2)
     daemons (1.1.4)
-    devise (1.4.7)
+    devise (1.4.8)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
       warden (~> 1.0.3)
@@ -121,7 +121,8 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.6)
     rake (0.9.2)
-    rdoc (3.9.4)
+    rdoc (3.10)
+      json (~> 1.4)
     sass (3.1.10)
     sass-rails (3.1.4)
       actionpack (~> 3.1.0)
