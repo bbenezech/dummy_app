@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/sferik/rails_admin.git
-  revision: 1ae0573b080db9fd7b26b15de910fcc33cd14526
+  revision: 4c4e21dc71a0b3d04c7fc8efcd0462f6fa4f9daf
   specs:
     rails_admin (0.0.1)
       bootstrap-sass (~> 1.4)
