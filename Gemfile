@@ -9,7 +9,6 @@ gem 'paperclip', '~> 2.4'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'dragonfly'
-gem 'sqlite3'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
