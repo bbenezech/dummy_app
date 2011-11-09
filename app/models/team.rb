@@ -1,3 +1,6 @@
+# coding: utf-8
+
+
 class Team < ActiveRecord::Base
   validates_numericality_of :division_id, :only_integer => true
   validates_presence_of :manager
@@ -11,12 +14,12 @@ class Team < ActiveRecord::Base
   has_many :players, :inverse_of => :team
   has_and_belongs_to_many :fans
   has_many :comments, :as => :commentable
-  
+
   def player_names_truncated
     players.map{|p| p.name}.join(", ")[0..32]
   end
 
   def color_enum
-    ['white', 'black', 'red', 'green', 'blue']
+    ['white', 'black', 'red', 'green', 'blu<e>é']
   end
 end
