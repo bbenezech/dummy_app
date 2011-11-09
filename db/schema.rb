@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110901154834) do
+ActiveRecord::Schema.define(:version => 20111108143642) do
 
   create_table "balls", :force => true do |t|
     t.string   "color"
@@ -81,6 +81,9 @@ ActiveRecord::Schema.define(:version => 20110901154834) do
     t.string   "format"
     t.string   "restricted_field"
     t.string   "protected_field"
+    t.string   "paperclip_asset_file_name"
+    t.string   "dragonfly_asset_uid"
+    t.string   "carrierwave_asset"
   end
 
   create_table "leagues", :force => true do |t|
@@ -140,6 +143,12 @@ ActiveRecord::Schema.define(:version => 20110901154834) do
     t.float    "win_percentage"
     t.decimal  "revenue"
     t.string   "color"
+  end
+
+  create_table "unscoped_pages", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
