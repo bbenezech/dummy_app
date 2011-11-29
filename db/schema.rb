@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111108143642) do
+ActiveRecord::Schema.define(:version => 20111123092549) do
 
   create_table "balls", :force => true do |t|
     t.string   "color"
@@ -90,6 +90,13 @@ ActiveRecord::Schema.define(:version => 20111108143642) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name",       :limit => 50, :null => false
+  end
+
+  create_table "nested_field_tests", :force => true do |t|
+    t.string   "title"
+    t.integer  "field_test_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "players", :force => true do |t|

@@ -12,4 +12,12 @@ class Player < ActiveRecord::Base
   has_many :comments, :as => :commentable
 
   attr_protected :suspended
+  
+  def draft_id
+    self.draft.try :id
+  end
+  
+  def draft_id=(id)
+    self.draft = Draft.find_by_id(id)
+  end
 end
