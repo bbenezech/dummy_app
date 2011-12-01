@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/sferik/rails_admin.git
-  revision: 8ba8efead4c1bf72496b91600c170fb495c17850
+  revision: 2aeb5e476ebd9b6e6bb74418e6fec3c2f45ee580
   specs:
     rails_admin (0.0.1)
       bbenezech-nested_form (~> 0.0.2)
@@ -63,7 +63,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.1.3)
-    devise (1.5.1)
+    devise (1.5.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
       warden (~> 1.1)
@@ -85,7 +85,7 @@ GEM
     jquery-rails (1.0.19)
       railties (~> 3.0)
       thor (~> 0.14)
-    json (1.6.2)
+    json (1.6.3)
     kaminari (0.12.4)
       rails (>= 3.0.0)
     mail (2.3.0)
