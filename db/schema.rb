@@ -15,35 +15,35 @@ ActiveRecord::Schema.define(:version => 20111123092549) do
 
   create_table "balls", :force => true do |t|
     t.string   "color"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "cms_basic_pages", :force => true do |t|
     t.string   "title"
     t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "comments", :force => true do |t|
     t.integer  "commentable_id"
     t.string   "commentable_type"
     t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "divisions", :primary_key => "custom_id", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
     t.integer  "custom_league_id"
     t.string   "name",             :limit => 50, :null => false
   end
 
   create_table "drafts", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.integer  "player_id"
     t.integer  "team_id"
     t.date     "date"
@@ -55,8 +55,8 @@ ActiveRecord::Schema.define(:version => 20111123092549) do
   end
 
   create_table "fans", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.string   "name",       :limit => 100, :null => false
   end
 
@@ -76,8 +76,8 @@ ActiveRecord::Schema.define(:version => 20111123092549) do
     t.time     "time_field"
     t.date     "date_field"
     t.boolean  "boolean_field"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.string   "format"
     t.string   "restricted_field"
     t.string   "protected_field"
@@ -87,21 +87,21 @@ ActiveRecord::Schema.define(:version => 20111123092549) do
   end
 
   create_table "leagues", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
     t.string   "name",       :limit => 50, :null => false
   end
 
   create_table "nested_field_tests", :force => true do |t|
     t.string   "title"
     t.integer  "field_test_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "players", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                   :null => false
+    t.datetime "updated_at",                                   :null => false
     t.datetime "deleted_at"
     t.integer  "team_id"
     t.string   "name",       :limit => 100,                    :null => false
@@ -115,47 +115,45 @@ ActiveRecord::Schema.define(:version => 20111123092549) do
   end
 
   create_table "rails_admin_histories", :force => true do |t|
-    t.text     "message"
+    t.string   "message"
     t.string   "username"
     t.integer  "item"
     t.string   "table"
-    t.integer  "month",      :limit => 2
-    t.integer  "year",       :limit => 5
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
-  add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_histories_on_item_and_table_and_month_and_year"
+  add_index "rails_admin_histories", ["item", "table"], :name => "index_histories_on_item_and_table"
 
   create_table "rel_tests", :force => true do |t|
     t.integer  "league_id"
     t.integer  "division_id", :null => false
     t.integer  "player_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "teams", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                                   :null => false
+    t.datetime "updated_at",                                                   :null => false
     t.integer  "division_id"
     t.string   "name",           :limit => 50
     t.string   "logo_url"
-    t.string   "manager",        :limit => 100, :null => false
+    t.string   "manager",        :limit => 100,                                :null => false
     t.string   "ballpark",       :limit => 100
     t.string   "mascot",         :limit => 100
     t.integer  "founded"
     t.integer  "wins"
     t.integer  "losses"
     t.float    "win_percentage"
-    t.decimal  "revenue"
+    t.decimal  "revenue",                       :precision => 18, :scale => 2
     t.string   "color"
   end
 
   create_table "unscoped_pages", :force => true do |t|
     t.string   "title"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -170,8 +168,8 @@ ActiveRecord::Schema.define(:version => 20111123092549) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "password_salt"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                          :null => false
+    t.datetime "updated_at",                                          :null => false
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
