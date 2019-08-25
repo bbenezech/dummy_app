@@ -1,4 +1,4 @@
-class CreateLeaguesMigration < ActiveRecord::Migration
+class CreateLeaguesMigration < ActiveRecord::Migration[4.2]
   def self.up
     create_table :leagues do |t|
       t.timestamps

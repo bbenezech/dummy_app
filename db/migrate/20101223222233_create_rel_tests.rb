@@ -1,4 +1,4 @@
-class CreateRelTests < ActiveRecord::Migration
+class CreateRelTests < ActiveRecord::Migration[4.2]
   def self.up
     create_table :rel_tests do |t|
       t.integer :league_id

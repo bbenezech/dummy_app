@@ -1,8 +1,12 @@
-class Division < ActiveRecord::Base
-  set_primary_key :custom_id
-  validates_numericality_of(:custom_league_id, :only_integer => true)
-  validates_presence_of(:name)
+# frozen_string_literal: true
 
-  belongs_to :league, :foreign_key => 'custom_league_id'
-  has_many :teams
+class Division < ApplicationRecord
+  has_paper_trail
+
+  self.primary_key = :custom_id
+  validates :custom_league_id, numericality: { only_integer: true }
+  validates :name, presence: true
+
+  belongs_to :league, foreign_key: 'custom_league_id', inverse_of: :divisions
+  has_many :teams, dependent: :destroy
 end

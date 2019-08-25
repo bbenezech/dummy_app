@@ -1,8 +1,11 @@
-class Ball < ActiveRecord::Base
+# frozen_string_literal: true
 
-  validates_presence_of :color
+class Ball < ApplicationRecord
+  has_paper_trail
+
+  validates :color, presence: true
 
   def to_param
-    color.present? ? color.downcase.gsub(" ", "-") : id
+    color.present? ? color.downcase.tr(' ', '-') : id
   end
 end

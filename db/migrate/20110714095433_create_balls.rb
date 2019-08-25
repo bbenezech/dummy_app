@@ -1,4 +1,4 @@
-class CreateBalls < ActiveRecord::Migration
+class CreateBalls < ActiveRecord::Migration[4.2]
   def self.up
     create_table :balls, :force => true do |t|
       t.string :color

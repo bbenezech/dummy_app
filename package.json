@@ -1,0 +1,19 @@
+{
+  "name": "dummy_app",
+  "private": true,
+  "engines": {
+    "node": ">= 12.0.0 < 15",
+    "yarn": "^1.21.1"
+  },
+  "dependencies": {
+    "@rails/actioncable": "^6.0.3",
+    "@rails/activestorage": "^6.0.3",
+    "@rails/ujs": "^6.0.3",
+    "@rails/webpacker": "5.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

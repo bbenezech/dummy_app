@@ -1,4 +1,4 @@
-class CreateUnscopedPages < ActiveRecord::Migration
+class CreateUnscopedPages < ActiveRecord::Migration[4.2]
   def change
     create_table :unscoped_pages do |t|
       t.string :title

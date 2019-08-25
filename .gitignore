@@ -2,3 +2,11 @@
 db/*.sqlite3
 log/*.log
 tmp/
+/public/system
+/public/uploads
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
