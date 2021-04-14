@@ -1,4 +1,4 @@
-class SetPrimaryKeyNotNullForDivisions < ActiveRecord::Migration
+class SetPrimaryKeyNotNullForDivisions < ActiveRecord::Migration[4.2]
   def up
     drop_table :divisions
     create_table :divisions, :id => false do |t|

@@ -1,10 +1,14 @@
-class Draft < ActiveRecord::Base
-  validates_numericality_of(:player_id, :only_integer => true)
-  validates_numericality_of(:team_id, :only_integer => true)
-  validates_presence_of(:date)
-  validates_numericality_of(:round, :only_integer => true)
-  validates_numericality_of(:pick, :only_integer => true)
-  validates_numericality_of(:overall, :only_integer => true)
+# frozen_string_literal: true
+
+class Draft < ApplicationRecord
+  has_paper_trail
+
+  validates :player_id, numericality: { only_integer: true }
+  validates :team_id, numericality: { only_integer: true }
+  validates :date, presence: true
+  validates :round, numericality: { only_integer: true }
+  validates :pick, numericality: { only_integer: true }
+  validates :overall, numericality: { only_integer: true }
 
   belongs_to(:team)
   belongs_to(:player)

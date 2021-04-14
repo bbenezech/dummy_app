@@ -1,4 +1,4 @@
-class CreateDivisionsMigration < ActiveRecord::Migration
+class CreateDivisionsMigration < ActiveRecord::Migration[4.2]
   def self.up
     create_table :divisions do |t|
       t.timestamps

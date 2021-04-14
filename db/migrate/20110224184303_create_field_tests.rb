@@ -1,4 +1,4 @@
-class CreateFieldTests < ActiveRecord::Migration
+class CreateFieldTests < ActiveRecord::Migration[4.2]
   def self.up
     create_table :field_tests do |t|
       t.string :string_field

@@ -1,4 +1,4 @@
-  class AddAvatarColumnsToUser < ActiveRecord::Migration
+  class AddAvatarColumnsToUser < ActiveRecord::Migration[4.2]
     def self.up
       add_column :users, :avatar_file_name,    :string
       add_column :users, :avatar_content_type, :string

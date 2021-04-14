@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 class Ability
   include CanCan::Ability
 
-  def initialize(user)
+  def initialize(_user)
     can :manage, :all
-    cannot [:update, :destroy], User, :email => 'username@example.com'
+    cannot %i[update destroy], User, email: 'username@example.com'
   end
 end

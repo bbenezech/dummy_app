@@ -1,4 +1,4 @@
-class ChangeDivisionPrimaryKey < ActiveRecord::Migration
+class ChangeDivisionPrimaryKey < ActiveRecord::Migration[4.2]
   def up
     drop_table :divisions
     create_table :divisions, :primary_key => 'custom_id' do |t|

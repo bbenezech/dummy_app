@@ -1,7 +1,7 @@
-# encoding: utf-8
+# frozen_string_literal: true
+
 require 'mini_magick'
 class CarrierwaveUploader < CarrierWave::Uploader::Base
-
   # Include RMagick or ImageScience support:
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
@@ -16,9 +16,9 @@ class CarrierwaveUploader < CarrierWave::Uploader::Base
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
-  
+
   version :thumb do
-    process :resize_to_fill => [100,100]
+    process resize_to_fill: [100, 100]
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
@@ -49,5 +49,4 @@ class CarrierwaveUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
-
 end
